@@ -6,7 +6,7 @@
 
 > 本插件旨在还原 DeepSeek 网页端与主流 AI 客户端习以为常的对话操作，如**消息编辑、重试与删除**，让 DeepSeek Harness 里的对话同样顺手。
 
-> 这只是我为了尽量还原一些熟悉的操作而用AI制作的一个插件，可能还存在一些小BUG，以及实现方式存在一定风险，不建议生产力用户使用
+> 这只是我为了尽量还原一些熟悉的操作而用AI制作的一个插件，可能还存在一些小BUG，以及实现方式存在一定风险
 
 ---
 
@@ -31,7 +31,7 @@
 ### 方式一：从 GitHub 直接安装
 
 ```bash
-dsh plugin --profile web add git+https://github.com/suzuran520yyz/dsh-more-message-actions.git
+dsh plugin --profile web add github:suzuran520yyz/dsh-more-message-actions
 ```
 
 ### 方式二：克隆到本地后安装
