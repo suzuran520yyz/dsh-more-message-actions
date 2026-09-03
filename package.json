@@ -1,0 +1,51 @@
+{
+  "name": "dsh-more-message-actions",
+  "version": "1.0.0",
+  "description": "DSH Web GUI 更多消息操作：用户/AI 消息编辑、重试与高级重试、删除消息。编辑仅替换文本并保留思考/工具调用与后续内容；删除只移除目标消息本身——删除 AI 回复会连同其思维链/思考过程/工具调用一并移除，但不影响它对应的用户提问与后续消息，删除用户消息不影响其 AI 回复与后续消息；编辑弹窗自动预填持久化原文；图标按钮与复制等平台按钮同栏，适配 DSH 0.1.2-rc.1 客户端内核。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "message-actions",
+    "edit",
+    "retry",
+    "delete"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzuran520yyz/dsh-more-message-actions.git"
+  },
+  "homepage": "https://github.com/suzuran520yyz/dsh-more-message-actions#readme",
+  "bugs": {
+    "url": "https://github.com/suzuran520yyz/dsh-more-message-actions/issues"
+  }
+}

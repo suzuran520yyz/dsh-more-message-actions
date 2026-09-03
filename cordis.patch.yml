@@ -1,0 +1,7 @@
+# dsh-more-message-actions bundle patch: inserts the web client plugin row
+# into the web profile roster. The node half (exports ".") is a no-op host
+# placeholder; the dsh.client declaration in package.json makes the browser
+# half (exports "./client") load in the web GUI.
+- insert:
+    - id: more-message-actions
+      name: 'dsh-more-message-actions'
